@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <ul class="list">
+                <li><a href="#">Techify</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <span class="Rlist">
+                <div class="login-register"><a href="login.html">Log in</a></div>
+                <div class="login-register"><a href="#">Sign Up</a></div>
+            </span>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="login-card">
+            <h1>Login</h1>
+           <form class="login-form" action="POST">
+            <input class="login-text-field" type="text" placeholder="Email"><br>
+            <input class="login-text-field" type="text" placeholder="Password">
+            <span>
+                <input class="login-checkbox" type="checkbox" name="Remember me" id="">
+                <label for="remember_me">Remember Me</label>
+                <a  class="forgot-link"href="#">Forget Your Password?</a>
+            </span>
+            <button type="submit" value="Submit">Submit</button>
+            <span>
+                <span>Not a member yet?</span>
+                <a class="create-link" href="#">Create an account</a>
+            </span>
+           </form>
+        </div>
+    </div>
 </body>
 </html>
